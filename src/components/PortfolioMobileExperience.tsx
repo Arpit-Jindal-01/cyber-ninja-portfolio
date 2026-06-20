@@ -1089,14 +1089,14 @@ export function PortfolioMobileExperience() {
                   <p className="text-[0.72rem] sm:text-[0.8rem] text-zinc-300 leading-relaxed text-left">
                     If you are ready to scale, send your pitch to the address below. You must include your brand name, current monthly revenue, your biggest visual/marketing bottleneck, and a link to your current website/socials. Incomplete pitches will be ignored.
                   </p>
-                  <a
-                    href="mailto:jindalarpit0228@gmail.com"
-                    className="block w-full text-center group cursor-crosshair mt-1"
-                  >
-                    <span className="font-mono text-lg sm:text-2xl tracking-wider text-white font-black drop-shadow-[0_0_12px_rgba(255,255,255,0.45)] hover:text-[#00e5ff] transition-colors duration-200 select-all">
+                  <div className="w-full overflow-hidden">
+                    <a
+                      href="mailto:jindalarpit0228@gmail.com"
+                      className="block w-full break-all font-mono text-lg sm:text-xl md:text-3xl lg:text-4xl text-white hover:text-[#00e5ff] transition-colors duration-300 mt-4 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] cursor-crosshair select-all"
+                    >
                       jindalarpit0228@gmail.com
-                    </span>
-                  </a>
+                    </a>
+                  </div>
                   <button
                     onClick={() => setIsRevealed(false)}
                     className="text-zinc-500 hover:text-white text-sm mt-4 cursor-crosshair font-bold transition-colors uppercase tracking-widest"
