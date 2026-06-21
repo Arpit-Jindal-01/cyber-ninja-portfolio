@@ -120,9 +120,11 @@ a {
 }
 
 /* Hide default cursor when custom cursor is active */
-.custom-cursor-active,
-.custom-cursor-active * {
-  cursor: none;
+@media (min-width: 768px) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none;
+  }
 }
 
 /* Continuously glowing neon pulse keyframe - Electric Blue */
@@ -237,8 +239,10 @@ a {
 }
 
 /* Global Crosshair Overrides for interactive items */
-a, button, [role="button"], .cursor-pointer, input, textarea, select, label {
-  cursor: crosshair !important;
+@media (min-width: 768px) {
+  a, button, [role="button"], .cursor-pointer, input, textarea, select, label {
+    cursor: crosshair !important;
+  }
 }
 
 /* Terminal cursor blink */

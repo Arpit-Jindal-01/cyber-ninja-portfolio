@@ -337,7 +337,7 @@ function CustomCursor() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed left-0 top-0 z-[9999] flex items-center justify-center mix-blend-screen"
+      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden md:flex items-center justify-center mix-blend-screen"
       style={{
         x: springX,
         y: springY,
@@ -579,7 +579,7 @@ function VisualSlider({
       style={{ y: containerY }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-zinc-950 select-none cursor-crosshair border border-zinc-900"
+      className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-zinc-950 select-none md:cursor-crosshair border border-zinc-900"
     >
       <div
         ref={containerRef}
@@ -954,7 +954,7 @@ export function PortfolioMobileExperience() {
             initial={{ opacity: 0, filter: 'blur(10px)', y: 25 }}
             animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
             transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] as const }}
-            className="group flex flex-col items-center justify-center font-display font-black text-white text-5xl md:text-7xl tracking-[0.22em] hover:tracking-[0.3em] hover:text-white scale-100 hover:scale-105 hover:drop-shadow-[3px_0px_0px_rgba(0,229,255,0.7),_-3px_0px_0px_rgba(176,38,255,0.7),_0_0_30px_rgba(0,229,255,0.8)] transition-all duration-75 ease-in cursor-crosshair leading-[0.95] text-center overflow-visible select-text"
+            className="group flex flex-col items-center justify-center font-display font-black text-white text-5xl md:text-7xl tracking-[0.22em] hover:tracking-[0.3em] hover:text-white scale-100 hover:scale-105 hover:drop-shadow-[3px_0px_0px_rgba(0,229,255,0.7),_-3px_0px_0px_rgba(176,38,255,0.7),_0_0_30px_rgba(0,229,255,0.8)] transition-all duration-75 ease-in md:cursor-crosshair leading-[0.95] text-center overflow-visible select-text"
           >
             <span className="mr-[-0.22em] group-hover:mr-[-0.3em] transition-all duration-75 ease-in">ARPIT</span>
             <span className="mr-[-0.22em] group-hover:mr-[-0.3em] transition-all duration-75 ease-in">JINDAL</span>
@@ -1038,7 +1038,7 @@ export function PortfolioMobileExperience() {
       {/* Stark Overhauled Terminal Contact Section */}
       <section
         ref={contactSectionRef}
-        className="relative z-10 flex h-[100dvh] flex-col justify-between px-6 py-12 sm:px-12 bg-black border-t border-zinc-950 overflow-hidden"
+        className="relative z-10 flex min-h-[100dvh] flex-col justify-between px-6 py-12 pb-32 md:pb-12 sm:px-12 bg-black border-t border-zinc-950 overflow-x-hidden"
       >
         {/* Contact Black Hole Spotlight Overlay */}
         <motion.div
@@ -1081,7 +1081,7 @@ export function PortfolioMobileExperience() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 15 }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
-                  className="relative z-50 pointer-events-auto mx-auto w-full max-w-lg p-6 bg-black border border-[#00e5ff] rounded-2xl shadow-[0_0_35px_rgba(0,229,255,0.25),inset_0_0_20px_rgba(0,229,255,0.1)] text-center font-mono select-text flex flex-col items-center gap-4"
+                  className="relative z-50 pointer-events-auto mx-auto w-full max-w-lg p-6 bg-black border border-[#00e5ff] rounded-2xl shadow-[0_0_35px_rgba(0,229,255,0.25),inset_0_0_20px_rgba(0,229,255,0.1)] text-center font-mono select-text flex flex-col items-center gap-4 h-auto overflow-visible"
                 >
                   <h3 className="text-[#00e5ff] font-bold tracking-widest text-sm sm:text-base">
                     SECURE TRANSMISSION INITIATED.
@@ -1092,14 +1092,14 @@ export function PortfolioMobileExperience() {
                   <div className="w-full overflow-hidden">
                     <a
                       href="mailto:jindalarpit0228@gmail.com"
-                      className="block w-full break-all font-mono text-lg sm:text-xl md:text-3xl lg:text-4xl text-white hover:text-[#00e5ff] transition-colors duration-300 mt-4 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] cursor-crosshair select-all"
+                      className="block w-full break-all font-mono text-lg sm:text-xl md:text-3xl lg:text-4xl text-white hover:text-[#00e5ff] transition-colors duration-300 mt-4 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] md:cursor-crosshair select-all"
                     >
                       jindalarpit0228@gmail.com
                     </a>
                   </div>
                   <button
                     onClick={() => setIsRevealed(false)}
-                    className="text-zinc-500 hover:text-white text-sm mt-4 cursor-crosshair font-bold transition-colors uppercase tracking-widest"
+                    className="text-zinc-500 hover:text-white text-sm mt-4 md:cursor-crosshair font-bold transition-colors uppercase tracking-widest"
                   >
                     CLOSE
                   </button>
